@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://your-logo-url-here.com/logo.png" alt="Logo" width="150"/>
+  <!-- <img src="https://your-logo-url-here.com/logo.png" alt="Logo" width="150"/> -->
   <h1>Aljayz | Portfolio</h1>
   <p>Exploring AI • Cloud • Web • Mobile</p>
 </div>
@@ -8,24 +8,19 @@
 
 ## 👋 About Me
 
-Hi! I'm **Aljayz**, a passionate developer exploring the worlds of **Artificial Intelligence**, **Cloud Computing**, **Web Development**, and **Mobile Development**.  
+Hi! I'm **Aljayz**, a passionate developer exploring the worlds of **Artificial Intelligence**, **Cloud Computing**, **Web Development**, **Parallel and Distributed Computing**, and **Mobile Development**.  
 This portfolio showcases my personal and collaborative projects, learnings, and growth as a developer.
 
 ---
 
 ## 🧰 Tech Stack
 
-### 🔧 Backend
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2b%2b&logoColor=white"/>
   <img src="https://img.shields.io/badge/Sequelize-03AFEF?style=for-the-badge&logo=sequelize&logoColor=white"/>
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"/>
-</p>
-
-### 🎨 Frontend
-<p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
@@ -49,19 +44,28 @@ This portfolio showcases my personal and collaborative projects, learnings, and 
 
 ## 🚀 Projects
 
-| Project Name | Description | Live Demo / Repo |
-|--------------|-------------|------------------|
-| **Project 1** | AI-powered web tool | [Live](#) • [Repo](#) |
-| **Project 2** | Mobile app with React Native | [Live](#) • [Repo](#) |
-| **Project 3** | Firebase + Vue.js app | [Live](#) • [Repo](#) |
-| **More coming soon...** | | |
+| Project Name | Description | Repo Link | Repo Visibility |
+|--------------|-------------|------------------|-----------------| 
+| **Parallel-and-Distributed-Merge-Sort-Implementations** | A research comparison of sequential vs. parallel Merge Sort using MPI4PY, Python, and NumPy. Evaluates performance scalability in distributed systems through multi-processor sorting and merging. | [Repo](https://github.com/Aljayz/Parallel-and-Distributed-Merge-Sort-Implementations) | Public |
+| **Llama-API** | A dual project featuring: (1) Tkinter GUI for Llama3 with streaming responses and keyboard controls, and (2) MPI4PY-based parallel merge sort research comparing sequential vs distributed performance. | [Repo](https://github.com/Aljayz/Llama-API) | Public |
+| **Stochastic-Queue-System_Simulation** | A C++ discrete-event simulator modeling single/multi-server queues with exponential arrival/service times. Calculates key metrics (utilization, wait times, rejection rates) for balanced (λ=μ), overloaded (λ>μ), and underloaded (λ<μ) systems. | [Repo](https://github.com/Aljayz/Stochastic-Queue-System_Simulation) | Public |
+| **Jobars-Events-Webpage** | A web application for managing events, featuring a user-friendly interface and real-time updates. | [Repo](https://github.com/Aljayz/Jobars-Events-Webpage) | Public |
+| **Cooperative Development Authority - Philippines** | Freelance project with NDA | Repo | Private |
+| **More coming soon...** | | | |
 
 ---
 
-## 📫 Contact
-
-Feel free to reach out via [GitHub](https://github.com/Aljayz) or connect with me through the project repositories above.
-
----
-
-> 🚀 This portfolio is built and hosted with **GitHub Pages**.
+## 📫 Contact me via
+<p>
+<div align="center">
+  <a href="https://www.instagram.com/the.aljayz/">
+    <img src="https://img.shields.io/badge/Instagram-the.aljayz-1877F2?style=for-the-badge&logo=instagram&logoColor=white"/>
+  </a>
+  <a href="https://www.facebook.com/the.aljayz">
+    <img src="https://img.shields.io/badge/Facebook-the.aljayz-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
+  </a>
+  <a href="https://github.com/Aljayz">
+    <img src="https://img.shields.io/badge/GitHub-Aljayz-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+</div>
+</p>
