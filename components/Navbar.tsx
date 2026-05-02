@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import Aljayz from '../public/Aljayz2.png';
+import Aljayz from '../public/Aljayz.svg';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -20,17 +20,15 @@ export default function Navbar() {
     <nav className="fixed top-0 z-50 w-full backdrop-blur-md bg-dark/80 border-b border-dark-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* <a href="#home" className="text-xl font-bold gradient-text">
-            Aljayz
-          </a> */}
-          <Image
-                src={Aljayz}
-                alt="Aljayz logo"
-                width="0"   
-                height="0"
-                // No need for width/height - Next.js will automatically set them
-                placeholder="blur" // Optional: adds a blur-up effect
+          <a href="#home">
+            <Image
+              src={Aljayz}
+              alt="Aljayz logo"
+              width={130}
+              height={60}
+              // Adjust width/height to your preferred logo size
             />
+          </a>
           {/* Desktop menu */}
           <div className="hidden md:flex space-x-6">
             {navLinks.map((link) => (
