@@ -8,18 +8,6 @@ export default function Contact() {
       </h2>
       <div className="flex flex-wrap justify-center gap-4">
         <a
-          href="mailto:albertjaybarrororoisque@gmail.com"
-        >
-          <Image
-            src="https://img.shields.io/badge/Email-albertjaybarrororoisque%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"
-            alt="Email"
-            width={0}   
-            height={0}  
-            className="h-8 w-auto"
-            unoptimized
-          />
-        </a>
-        <a
           href="https://www.instagram.com/the.aljayz/"
           target="_blank"
           rel="noopener noreferrer"
@@ -57,6 +45,18 @@ export default function Contact() {
             alt="GitHub"
             width={0}
             height={0}
+            className="h-8 w-auto"
+            unoptimized
+          />
+        </a>
+        <a
+          href="mailto:albertjaybarrororoisque@gmail.com"
+        >
+          <Image
+            src="https://img.shields.io/badge/Email-albertjaybarrororoisque%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"
+            alt="Email"
+            width={0}   
+            height={0}  
             className="h-8 w-auto"
             unoptimized
           />
