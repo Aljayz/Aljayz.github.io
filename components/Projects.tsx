@@ -4,32 +4,51 @@ const projects = [
     desc: 'A research comparison of sequential vs. parallel Merge Sort using MPI4PY, Python, and NumPy. Evaluates performance scalability in distributed systems through multi-processor sorting and merging.',
     link: 'https://github.com/Aljayz/Parallel-and-Distributed-Merge-Sort-Implementations',
     visibility: 'public',
+    status: 'Completed',
   },
   {
     name: 'Llama-API',
     desc: 'A dual project featuring: (1) Tkinter GUI for Llama3 with streaming responses and keyboard controls, and (2) MPI4PY-based parallel merge sort research comparing sequential vs distributed performance.',
     link: 'https://github.com/Aljayz/Llama-API',
     visibility: 'public',
+    status: 'Completed',
   },
   {
     name: 'Stochastic-Queue-System_Simulation',
     desc: 'A C++ discrete-event simulator modeling single/multi-server queues with exponential arrival/service times. Calculates key metrics (utilization, wait times, rejection rates) for balanced (λ=μ), overloaded (λ>μ), and underloaded (λ<μ) systems.',
     link: 'https://github.com/Aljayz/Stochastic-Queue-System_Simulation',
     visibility: 'public',
+    status: 'Completed',
   },
   {
     name: 'Jobars-Events-Webpage',
     desc: 'A web application for managing events, featuring a user-friendly interface and real-time updates.',
     link: 'https://github.com/Aljayz/Jobars-Events-Webpage',
     visibility: 'public',
+    status: 'In Progress',
   },
   {
     name: 'Cooperative Development Authority - Philippines',
     desc: 'Freelance project with NDA',
     link: '#',
     visibility: 'private',
+    status: 'Cancelled',
   },
+  {
+    name: 'TikTok-Like-Automated-Like-Spam-Web-Browser-Extension',
+    desc: 'A browser extension that automates liking TikTok videos based on user-defined criteria, utilizing web scraping and automation techniques.',
+    link: 'https://github.com/Aljayz/TikTok-Like-Automated-Like-Spam-Web-Browser-Extension.git',
+    visibility: 'public',
+    status: 'Extensible',
+  }
 ];
+
+const statusStyles: Record<string, string> = {
+  'In Progress': 'bg-yellow-500/20 text-yellow-400',
+  'Completed': 'bg-green-500/20 text-green-400',
+  'Cancelled': 'bg-red-500/20 text-red-400',
+  'Extensible': 'bg-purple-500/20 text-purple-400',
+};
 
 export default function Projects() {
   return (
@@ -44,16 +63,37 @@ export default function Projects() {
             className="bg-dark-card border border-dark-border rounded-xl p-6 flex flex-col justify-between hover:border-primary/50 transition-colors shadow-lg"
           >
             <div>
-              <div className="flex items-center gap-2 mb-3">
-                <h3 className="text-xl font-bold text-white">{project.name}</h3>
+              {/* Badges row – now on top */}
+              <div className="flex gap-2 mb-2 justify-end">
                 {project.visibility === 'private' && (
                   <span className="text-xs bg-gray-700 text-gray-300 px-2 py-0.5 rounded-full">
                     Private
                   </span>
                 )}
+                {project.visibility === 'public' && (
+                  <span className="text-xs bg-gray-700 text-gray-300 px-2 py-0.5 rounded-full">
+                    Public
+                  </span>
+                )}
+                <span
+                  className={`text-xs px-2 py-0.5 rounded-full ${
+                    statusStyles[project.status] || 'bg-gray-700 text-gray-300'
+                  }`}
+                >
+                  {project.status}
+                </span>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed mb-6">{project.desc}</p>
+
+              {/* Title now sits below badges */}
+              <h3 className="text-xl font-bold text-white leading-tight mb-3">
+                {project.name}
+              </h3>
+
+              <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                {project.desc}
+              </p>
             </div>
+
             <a
               href={project.link}
               target={project.link !== '#' ? '_blank' : undefined}
