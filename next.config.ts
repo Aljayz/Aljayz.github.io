@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",               // <-- generate static files for GitHub Pages
+  output: "export",
+  // Add the line below. Use the EXACT name of your new repository.
+  basePath: "/portfolio", 
   images: {
-    unoptimized: true,            // <-- disables server-side image optimisation
-    // remotePatterns can stay, but they're ignored when unoptimized
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
